@@ -7,6 +7,12 @@ app.get('/', (req, res) => {
   appGetFunction(res);
 });
 
+app.get('/josef', (req, res) => {
+  res.json({
+    josef: 'karaburun',
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Sunucu çalışıyor: http://localhost:${PORT}`);
 });
