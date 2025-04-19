@@ -1,9 +1,10 @@
 const express = require('express');
+const { appGetFunction } = require('./appGetFunction');
 const app = express();
 const PORT = 3000;
 
 app.get('/', (req, res) => {
-  res.send('Merhaba Express!!!!!!!!!');
+  appGetFunction(res);
 });
 
 app.listen(PORT, () => {
