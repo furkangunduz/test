@@ -7,3 +7,5 @@ function appPostFunction(res) {
 }
 
 module.exports = { appPostFunction };
+
+apikey = 'asdalkjnfkjasnf';
