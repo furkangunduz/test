@@ -13,6 +13,12 @@ app.get('/josef', (req, res) => {
   });
 });
 
+app.get('/karaburun', (req, res) => {
+  res.json({
+    josef: 'karaburun',
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Sunucu çalışıyor: http://localhost:${PORT}`);
 });
